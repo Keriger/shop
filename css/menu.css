@@ -1,0 +1,43 @@
+#menu {
+    overflow: hedden;
+    position: relative;
+    z-index: 2;
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu ul li:hover>ul {
+    display: block;
+    left: 270px;
+}
+
+#menu ul li>ul {
+    padding-inline-start: 0;
+    display: none;
+    position: absolute;
+    background-color: #e5e5e5;
+    top: 0;
+    width: 308px;
+    z-index: -1;
+    height: 100%;
+    box-shadow: 0 24px 21px rgba(0, 0, 0, 0.12);
+}
+
+ul.catalog-products__list li ul li a {
+    border-bottom: none
+}
+
+ul.catalog-products__list li ul li a:after {
+    background-image: none
+}
+
+ul.catalog-products__list li ul li a:hover {
+    text-decoration: underline;
+    width: 100%;
+}
+
+ul.catalog-products__list li ul li a:hover:after {
+    background-image: none
+}
